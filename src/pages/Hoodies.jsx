@@ -3,10 +3,11 @@ import CategoryPage from "../components/CategoryPage";
 function Hoodies() {
   const products = [
     {
-      name: "Logo Hoodie",
-      price: "$69.95",
-      image: "/images/products/hoodie-logo.jpg",
-      description: "Heavyweight hoodie featuring Formula RX8 branding.",
+      name: "Classic Formula RX8 Black/White Hoodie",
+      price: "$55.00",
+      image: "/images/products/formula-rx8-hoodie-black-white.png",
+      description: "Classic Formula RX8 Black/White Hoodie",
+      link: "https://vertexgraphics.com.au/products/classic-formula-rx8-black-white-hoody",
     },
     {
       name: "Race Team Hoodie",

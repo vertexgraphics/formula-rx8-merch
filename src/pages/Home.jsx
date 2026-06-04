@@ -26,6 +26,13 @@ function Home() {
       description: "Easy staple for fans who want subtle branding.",
     },
 
+    {
+      name: "Stubby Coolers",
+      path: "/stubbycoolers",
+      image: "/images/stubby-cooler.jpg",
+      description: "Trackside essential with room for bold graphics.",
+    },
+
   ];
 
   return (

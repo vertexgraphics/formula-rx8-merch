@@ -3,10 +3,10 @@ import CategoryPage from "../components/CategoryPage";
 function Shirts() {
   const products = [
     {
-      name: "RX8 Logo Tee",
-      price: "$39.95",
-      image: "/images/products/shirt-logo.jpg",
-      description: "Classic Formula RX8 supporter tee.",
+      name: "Classic Formula RX8 Black T-Shirt",
+      price: "$40.00",
+      image: "/images/products/classic-formula-rx8-black",
+      description: "Classic Formula RX8 Black T-Shirt",
     },
     {
       name: "Race Day Tee",

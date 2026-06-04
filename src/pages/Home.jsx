@@ -10,7 +10,7 @@ function Home() {
     {
       name: "Shirts",
       path: "/shirts",
-      image: "/images/shirts.jpg",
+      image: "/images/shirts.png",
       description: "Everyday fanwear with a race-inspired edge.",
     },
     {

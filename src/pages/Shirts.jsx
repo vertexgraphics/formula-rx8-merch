@@ -12,9 +12,9 @@ function Shirts() {
     {
       name: "Classic Formula RX8 Red T-Shirt",
       price: "$40.00",
-      image: "/images/products/shirt-race-day.jpg",
+      image: "/images/products/classic-formula-rx8-red.png",
       description: "Track-inspired fanwear for race weekends.",
-      link: "https://vertexgraphics.com.au/products/classic-formula-rx8-red",
+      link: "https://vertexgraphics.com.au/products/classic-formula-rx8-red-t-shirt",
     },
   ];
 

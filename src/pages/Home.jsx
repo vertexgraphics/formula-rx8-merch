@@ -23,14 +23,14 @@ function Home() {
       name: "Hats",
       path: "/hats",
       image: "/images/hat.jpg",
-      description: "Easy staple for fans who want subtle branding.",
+      description: "Trackside headwear for Formula RX8 fans.",
     },
 
     {
       name: "Coolers",
       path: "/stubbycoolers",
       image: "/images/stubby-cooler.jpg",
-      description: "Trackside essential with room for bold graphics.",
+      description: "Trackside essentials for every Formula RX8 supporter.",
     },
 
   ];

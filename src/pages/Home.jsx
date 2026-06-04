@@ -16,7 +16,7 @@ function Home() {
     {
       name: "Hoodies",
       path: "/hoodies",
-      image: "/images/hoodies.jpg",
+      image: "/images/hoodies.png",
       description: "Heavyweight layers for cold paddocks and late starts.",
     },
     {
@@ -25,7 +25,6 @@ function Home() {
       image: "/images/hat.jpg",
       description: "Trackside headwear for Formula RX8 fans.",
     },
-
     {
       name: "Coolers",
       path: "/stubbycoolers",

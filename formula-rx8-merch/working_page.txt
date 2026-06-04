@@ -1,0 +1,32 @@
+For now:
+shirts
+Option for sizes
+one colour
+small, medium, large, extra large
+
+hoodies
+option for sizes
+one colour
+small, medium, large, extra large
+
+hats
+One size fits all
+
+
+Remove button, make whole panel linked
+
+
+from Home.jsx
+  {
+      name: "Beanies",
+      path: "/beanies",
+      image: "/images/beanie.jpg",
+      description: "Small accessory, big motorsport identity.",
+    },
+    {
+      name: "Stubby Coolers",
+      path: "/stubbycoolers",
+      image: "/images/stubby-cooler.jpg",
+      description: "Trackside essential with room for bold graphics.",
+    },
+

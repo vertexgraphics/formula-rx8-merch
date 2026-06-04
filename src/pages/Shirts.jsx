@@ -16,7 +16,6 @@ function Shirts() {
       description: "Classic Formula RX8 Red T-Shirt.",
       link: "https://vertexgraphics.com.au/products/classic-formula-rx8-red-t-shirt",
     },
-
     {
       name: "Special Edition Mirror Gold Formula RX8 Black T-Shirt",
       price: "$45.00",

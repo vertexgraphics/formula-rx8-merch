@@ -5,7 +5,7 @@ function Shirts() {
     {
       name: "Classic Formula RX8 Black T-Shirt",
       price: "$40.00",
-      image: "/images/products/classic-formula-rx8-black",
+      image: "/images/products/classic-formula-rx8-black.png",
       description: "Classic Formula RX8 Black T-Shirt",
     },
     {

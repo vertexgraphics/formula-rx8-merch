@@ -27,7 +27,7 @@ function Home() {
     },
 
     {
-      name: "Stubby Coolers",
+      name: "Coolers",
       path: "/stubbycoolers",
       image: "/images/stubby-cooler.jpg",
       description: "Trackside essential with room for bold graphics.",

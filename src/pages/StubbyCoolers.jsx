@@ -18,7 +18,7 @@ function StubbyCoolers() {
 
   return (
     <CategoryPage
-      title="Stubby Coolers"
+      title="Coolers"
       description="Trackside essentials for every Formula RX8 supporter."
       products={products}
     />

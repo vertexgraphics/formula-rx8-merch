@@ -9,8 +9,6 @@ function Navbar() {
         <NavLink to="/shirts">Shirts</NavLink>
         <NavLink to="/hoodies">Hoodies</NavLink>
         <NavLink to="/hats">Hats</NavLink>
-        <NavLink to="/beanies">Beanies</NavLink>
-        <NavLink to="/stubbycoolers">Stubby Coolers</NavLink>
       </nav>
     </header>
   );

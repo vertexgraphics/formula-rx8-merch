@@ -31,3 +31,6 @@ from Home.jsx
     },
 
 Google Analytics: G-5BMPFK6GKW
+
+<NavLink to="/beanies">Beanies</NavLink>
+        <NavLink to="/stubbycoolers">Stubby Coolers</NavLink>

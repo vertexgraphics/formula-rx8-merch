@@ -28,7 +28,7 @@ function Home() {
     {
       name: "Coolers",
       path: "/stubbycoolers",
-      image: "/images/stubby-cooler.jpg",
+      image: "/images/stubby-cooler.png",
       description: "Trackside essentials for every Formula RX8 supporter.",
     },
 

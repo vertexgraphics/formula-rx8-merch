@@ -3,16 +3,25 @@ import CategoryPage from "../components/CategoryPage";
 function StubbyCoolers() {
   const products = [
     {
-      name: "Classic Stubby Cooler",
-      price: "$9.95",
-      image: "/images/products/stubby-classic.jpg",
-      description: "Keep your drink cold while supporting the series.",
+      name: "Formula RX8 Stubby Cooler - Black/White",
+      price: "$10.00",
+      image: "/images/products/black-white-stubby-cooler.png",
+      description: "Formula RX8 Stubby Cooler - Black/White.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-black-white",
     },
     {
-      name: "Race Day Stubby Cooler",
-      price: "$9.95",
-      image: "/images/products/stubby-raceday.jpg",
-      description: "Perfect for race meetings and BBQ weekends.",
+      name: "Formula RX8 Stubby Cooler - Red/White",
+      price: "$10.00",
+      image: "/images/products/red-white-stubby-cooler.png",
+      description: "Formula RX8 Stubby Cooler - Red/White.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-red-white",
+    },
+     {
+      name: "Formula RX8 Stubby Cooler - Black/gold",
+      price: "$10.00",
+      image: "/images/products/black-gold-stubby-cooler.png",
+      description: "Formula RX8 Stubby Cooler - Black/Gold.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-black-gold",
     },
   ];
 

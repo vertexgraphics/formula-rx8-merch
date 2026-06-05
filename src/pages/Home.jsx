@@ -22,7 +22,7 @@ function Home() {
     {
       name: "Hats",
       path: "/hats",
-      image: "/images/hat.jpg",
+      image: "/images/hat.webp",
       description: "Trackside headwear for Formula RX8 fans.",
     },
     {
@@ -44,8 +44,7 @@ function Home() {
           </h1>
 
           <p>
-            For fans of Australia’s only not-for-profit,
-            nationally televised one-make Mazda RX8 race series.
+
           </p>
         </div>
       </section>

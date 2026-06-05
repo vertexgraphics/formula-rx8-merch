@@ -3,16 +3,18 @@ import CategoryPage from "../components/CategoryPage";
 function Hats() {
   const products = [
     {
-      name: "Logo Cap",
-      price: "$29.95",
-      image: "/images/products/hat-logo.jpg",
-      description: "Classic Formula RX8 embroidered cap.",
+      name: "Black Formula RX8 Trucker Cap",
+      price: "$25.00",
+      image: "/images/products/black-trucker-cap.webp",
+      description: "Black Formula RX8 Trucker Cap.",
+      link: "https://vertexgraphics.com.au/products/black-formula-rx8-trucker-cap",
     },
     {
-      name: "Pit Lane Cap",
-      price: "$29.95",
-      image: "/images/products/hat-pitlane.jpg",
-      description: "Motorsport styling inspired by the paddock.",
+      name: "Red Formula RX8 Trucker Cap",
+      price: "$25.00",
+      image: "/images/products/red-trucker-cap.webp",
+      description: "Red Formula RX8 Trucker Cap.",
+      link: "https://vertexgraphics.com.au/products/ red-formula-rx8-trucker-cap",
     },
   ];
 

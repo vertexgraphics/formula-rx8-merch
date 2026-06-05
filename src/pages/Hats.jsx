@@ -14,7 +14,7 @@ function Hats() {
       price: "$25.00",
       image: "/images/products/red-trucker-cap.webp",
       description: "Red Formula RX8 Trucker Cap.",
-      link: "https://vertexgraphics.com.au/products/ red-formula-rx8-trucker-cap",
+      link: "https://vertexgraphics.com.au/products/red-formula-rx8-trucker-cap",
     },
   ];
 

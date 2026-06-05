@@ -404,4 +404,34 @@ body {
     width: 48%;
     object-fit: cover;
   }
+
+    .product-tile {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-tile .card-content {
+    width: 100%;
+    padding: 26px 24px 12px;
+    text-align: center;
+  }
+
+  .product-tile .card-content h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .product-tile .card-line {
+    margin: 16px auto;
+  }
+
+  .product-tile .card-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+    background: white;
+  }
 }

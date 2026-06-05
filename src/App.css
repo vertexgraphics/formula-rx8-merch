@@ -33,7 +33,7 @@ body {
 
   background-image: url("/images/hero-banner.jpg");
   background-size: cover;
-  background-position: right center;
+  background-position: center center;
 }
 
 .hero::before {
@@ -208,7 +208,7 @@ body {
 }
 
 .category-hero {
-  height: 350px;
+  height: 500px;
 }
 
 .product-tile {

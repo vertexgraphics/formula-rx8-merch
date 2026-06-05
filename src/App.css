@@ -37,17 +37,7 @@ body {
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.95) 0%,
-    rgba(0, 0, 0, 0.80) 40%,
-    rgba(0, 0, 0, 0.20) 75%,
-    rgba(0, 0, 0, 0.00) 100%
-  );
+  display: none;
 }
 
 .hero-content {

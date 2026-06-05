@@ -23,14 +23,27 @@ from Home.jsx
       image: "/images/beanie.jpg",
       description: "Small accessory, big motorsport identity.",
     },
-    {
-      name: "Stubby Coolers",
-      path: "/stubbycoolers",
-      image: "/images/stubby-cooler.jpg",
-      description: "Trackside essential with room for bold graphics.",
-    },
+
 
 Google Analytics: G-5BMPFK6GKW
 
 <NavLink to="/beanies">Beanies</NavLink>
-        <NavLink to="/stubbycoolers">Stubby Coolers</NavLink>
+        
+
+
+hero.jsx
+                <h1>
+          <span className="hero-white">Formula RX8</span>
+          <span className="hero-red">Fan Merch</span>
+        </h1>
+
+
+home.jsx
+<h1>
+            <span className="hero-white">Formula RX8</span>
+            <span className="hero-red">Fan Merch</span>
+          </h1>
+
+          <p>
+
+          </p>

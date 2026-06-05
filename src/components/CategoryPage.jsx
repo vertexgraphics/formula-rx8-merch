@@ -10,12 +10,6 @@ function CategoryPage({ title, description, products }) {
     <main className="page">
       <section className="hero category-hero">
         <div className="hero-content">
-          <h1>
-            <span className="hero-white">Formula RX8</span>
-            <span className="hero-red">{title}</span>
-          </h1>
-
-          <p>{description}</p>
         </div>
       </section>
 

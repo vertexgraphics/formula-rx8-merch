@@ -30,8 +30,7 @@ function Home() {
       path: "/stubbycoolers",
       image: "/images/stubby-cooler.png",
       description: "Trackside essentials for every Formula RX8 supporter.",
-    },
-
+    },  
   ];
 
   return (
@@ -46,6 +45,7 @@ function Home() {
         <p className="eyebrow">Shop By Category</p>
 
         <h2>Official Formula RX8 Merchandise</h2>
+        <h2>Orders to be delivered at the Formula RX8 Nationals (One Raceway, 20-21 June, 2026)</h2>
 
 <div className="grid">
   {categories.map((item) => (

@@ -40,12 +40,11 @@ function Home() {
       </section>
 
       <Navbar />
-
+        <h3>Orders to be delivered at the Formula RX8 Nationals (One Raceway, 20-21 June, 2026)</h3>
       <section className="categories">
         <p className="eyebrow">Shop By Category</p>
 
         <h2>Official Formula RX8 Merchandise</h2>
-        <h3>Orders to be delivered at the Formula RX8 Nationals (One Raceway, 20-21 June, 2026)</h3>
 
 <div className="grid">
   {categories.map((item) => (

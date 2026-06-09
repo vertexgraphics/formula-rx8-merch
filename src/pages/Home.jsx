@@ -31,6 +31,12 @@ function Home() {
       image: "/images/stubby-cooler.png",
       description: "Trackside essentials for every Formula RX8 supporter.",
     },  
+        {
+      name: "Beanies",
+      path: "/beanies",
+      image: "/images/beanie.png",
+      description: "Built for early starts and cold pit lanes.",
+    },  
   ];
 
   return (

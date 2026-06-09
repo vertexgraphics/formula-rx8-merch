@@ -10,6 +10,7 @@ function Navbar() {
         <NavLink to="/hoodies">Hoodies</NavLink>
         <NavLink to="/hats">Hats</NavLink>
         <NavLink to="/stubbycoolers">Coolers</NavLink>
+        <NavLink to="/beanies">Beanies</NavLink>
       </nav>
     </header>
   );

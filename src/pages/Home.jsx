@@ -22,7 +22,7 @@ function Home() {
     {
       name: "Hats",
       path: "/hats",
-      image: "/images/hat.webp",
+      image: "/images/hat.png",
       description: "Trackside headwear for Formula RX8 fans.",
     },
     {

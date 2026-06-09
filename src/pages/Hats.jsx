@@ -3,18 +3,46 @@ import CategoryPage from "../components/CategoryPage";
 function Hats() {
   const products = [
     {
-      name: "Black Formula RX8 Trucker Cap",
+      name: "Formula RX8 Trucker Cap - Black/White",
       price: "$25.00",
-      image: "/images/products/black-trucker-cap.webp",
-      description: "Black Formula RX8 Trucker Cap.",
-      link: "https://vertexgraphics.com.au/products/black-formula-rx8-trucker-cap",
+      image: "/images/products/black-white-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Black/White.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-black-white",
     },
     {
-      name: "Red Formula RX8 Trucker Cap",
+      name: "Formula RX8 Trucker Cap - Black/Black",
       price: "$25.00",
-      image: "/images/products/red-trucker-cap.webp",
-      description: "Red Formula RX8 Trucker Cap.",
-      link: "https://vertexgraphics.com.au/products/red-formula-rx8-trucker-cap",
+      image: "/images/products/black-black-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Black/Black.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-black-black",
+    },
+        {
+      name: "Formula RX8 Trucker Cap - Black/Gold",
+      price: "$25.00",
+      image: "/images/products/black-gold-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Black/Gold.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-black-gold",
+    },
+        {
+      name: "Formula RX8 Trucker Cap - Red/White",
+      price: "$25.00",
+      image: "/images/products/red-white-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Red/White.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-red-white",
+    },
+    {
+      name: "Formula RX8 Trucker Cap - Red/Black",
+      price: "$25.00",
+      image: "/images/products/red-black-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Red/Black.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-red-black",
+    },
+        {
+      name: "Formula RX8 Trucker Cap - Red/Gold",
+      price: "$25.00",
+      image: "/images/products/red-gold-trucker-cap.png",
+      description: "Formula RX8 Trucker Cap - Red/Gold.",
+      link: "https://vertexgraphics.com.au/products/formula-rx8-trucker-cap-red-gold",
     },
   ];
 

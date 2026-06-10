@@ -1,37 +1,19 @@
+import { useEffect, useState } from "react";
 import CategoryPage from "../components/CategoryPage";
+import { getProductsByCollection } from "../shopify";
 
-function StubbyCoolers() {
-  const products = [
-    {
-      name: "Formula RX8 Stubby Cooler - Black/White",
-      price: "$12.00",
-      image: "/images/products/black-white-stubby-cooler.png",
-      description: "Formula RX8 Stubby Cooler - Black/White.",
-      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-black-white",
-    },
-    {
-      name: "Formula RX8 Stubby Cooler - Red/White",
-      price: "$12.00",
-      image: "/images/products/red-white-stubby-cooler.png",
-      description: "Formula RX8 Stubby Cooler - Red/White.",
-      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-red-white",
-    },
-     {
-      name: "Formula RX8 Stubby Cooler - Black/gold",
-      price: "$15.00",
-      image: "/images/products/black-gold-stubby-cooler.png",
-      description: "Formula RX8 Stubby Cooler - Black/Gold.",
-      link: "https://vertexgraphics.com.au/products/formula-rx8-stubby-cooler-black-gold",
-    },
-  ];
+export default function StubbyCoolers() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProductsByCollection("coolers").then(setProducts).catch(console.error);
+  }, []);
 
   return (
     <CategoryPage
       title="Coolers"
       description="Trackside essentials for every Formula RX8 supporter."
-      products={products}
-    />
+      products={products}    
+      />
   );
 }
-
-export default StubbyCoolers;

@@ -1,22 +1,13 @@
+import { useEffect, useState } from "react";
 import CategoryPage from "../components/CategoryPage";
+import { getProductsByCollection } from "../shopify";
 
-function Hoodies() {
-  const products = [
-    {
-      name: "Classic Formula RX8 Black/White Hoodie",
-      price: "$60.00",
-      image: "/images/products/formula-rx8-hoodie-black-white.png",
-      description: "Classic Formula RX8 Black/White Hoodie",
-      link: "https://vertexgraphics.com.au/products/classic-formula-rx8-black-white-hoody",
-    },
-{
-      name: "Special Edition Mirror Gold Formula RX8 Black/Gold Hoodie",
-      price: "$65.00",
-      image: "/images/products/formula-rx8-hoodie-black-gold.png",
-      description: "Classic Formula RX8 Black/Gold Hoodie",
-      link: "https://vertexgraphics.com.au/products/classic-formula-rx8-black-gold-hoodie",
-    },
-  ];
+export default function Hoodies() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProductsByCollection("hoodies").then(setProducts).catch(console.error);
+  }, []);
 
   return (
     <CategoryPage
@@ -26,5 +17,3 @@ function Hoodies() {
     />
   );
 }
-
-export default Hoodies;

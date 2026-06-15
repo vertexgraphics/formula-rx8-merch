@@ -7,6 +7,8 @@ export default function StubbyCoolers() {
 
   useEffect(() => {
     getProductsByCollection("coolers").then(setProducts).catch(console.error);
+      document.title = "Stubby Coolers | Formula RX8 Merch";
+
   }, []);
 
   return (

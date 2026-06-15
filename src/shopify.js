@@ -1,12 +1,12 @@
-const SHOPIFY_DOMAIN = "qsccb0-xv.myshopify.com";
-const STOREFRONT_ACCESS_TOKEN = "8b09e4bf0c667bee3f44411832ccd90c";
+const SHOPIFY_DOMAIN = import.meta.env.VITE_SHOPIFY_STORE_DOMAIN;
+const SHOPIFY_TOKEN = import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN;
 
 async function shopifyFetch(query, variables = {}) {
-  const response = await fetch(`https://${SHOPIFY_DOMAIN}/api/2025-04/graphql.json`, {
+  const response = await fetch(`https://${SHOPIFY_DOMAIN}/api/2025-01/graphql.json`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-Shopify-Storefront-Access-Token": STOREFRONT_ACCESS_TOKEN,
+      "X-Shopify-Storefront-Access-Token": SHOPIFY_TOKEN,
     },
     body: JSON.stringify({ query, variables }),
   });
@@ -21,27 +21,44 @@ async function shopifyFetch(query, variables = {}) {
   return json.data;
 }
 
-export async function getProductsByCollection(collectionHandle) {
+export async function getProductsByCollectionHandle(collectionHandle) {
   const query = `
-    query getProductsByCollection($handle: String!) {
+    query GetCollectionProducts($handle: String!) {
       collection(handle: $handle) {
         title
-        products(first: 50) {
+        handle
+        products(first: 20) {
           edges {
             node {
               id
               title
               handle
+              productType
               description
-              availableForSale
-              featuredImage {
-                url
-                altText
-              }
-              priceRange {
-                minVariantPrice {
-                  amount
-                  currencyCode
+featuredImage {
+  url
+  altText
+}
+
+images(first: 20) {
+  edges {
+    node {
+      url
+      altText
+    }
+  }
+}
+              variants(first: 20) {
+                edges {
+                  node {
+                    id
+                    title
+                    availableForSale
+                    price {
+                      amount
+                      currencyCode
+                    }
+                  }
                 }
               }
             }
@@ -51,17 +68,43 @@ export async function getProductsByCollection(collectionHandle) {
     }
   `;
 
-  const data = await shopifyFetch(query, { handle: collectionHandle });
+  const data = await shopifyFetch(query, {
+    handle: collectionHandle,
+  });
 
-  if (!data.collection) return [];
+  return data.collection?.products.edges.map((edge) => edge.node) || [];
+}
 
-  return data.collection.products.edges.map(({ node }) => ({
-    id: node.id,
-    name: node.title,
-    description: node.description,
-    image: node.featuredImage?.url,
-    price: `$${Number(node.priceRange.minVariantPrice.amount).toFixed(2)}`,
-    link: `https://vertexgraphics.com.au/products/${node.handle}`,
-    available: node.availableForSale,
-  }));
+export const getProductsByCollection = getProductsByCollectionHandle;
+
+export async function createShopifyCart(lines) {
+  const query = `
+    mutation CartCreate($input: CartInput!) {
+      cartCreate(input: $input) {
+        cart {
+          id
+          checkoutUrl
+        }
+        userErrors {
+          field
+          message
+        }
+      }
+    }
+  `;
+
+  const data = await shopifyFetch(query, {
+    input: {
+      lines,
+    },
+  });
+
+  const errors = data.cartCreate.userErrors;
+
+  if (errors && errors.length > 0) {
+    console.error("Shopify cart errors:", errors);
+    throw new Error(errors[0].message);
+  }
+
+  return data.cartCreate.cart;
 }

@@ -20,28 +20,32 @@ function CategoryPage({ title, description, products }) {
         <h2>{title}</h2>
 
         <div className="grid">
-          {products.map((product) => (
-            <a
-              key={product.name}
-              href={product.link || "#"}
-              className="motorsport-card product-tile"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="card-content">
-                <h3>{product.name}</h3>
-                <div className="card-line"></div>
-                <p>{product.description}</p>
-                <p className="price">{product.price}</p>
-              </div>
+{products.map((product) => (
+  <a
+    key={product.id}
+href={`https://${import.meta.env.VITE_SHOPIFY_PUBLIC_DOMAIN}/products/${product.handle}`}
+    className="motorsport-card product-tile"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="card-content">
+      <h3>{product.title}</h3>
+      <div className="card-line"></div>
+      <p>{product.description}</p>
+      <p className="price">
+        ${Number(product.variants.edges[0].node.price.amount).toFixed(2)}
+      </p>
+    </div>
 
-              <img
-                className="card-image"
-                src={product.image}
-                alt={product.name}
-              />
-            </a>
-          ))}
+    {product.featuredImage?.url && (
+      <img
+        src={product.featuredImage.url}
+        alt={product.featuredImage.altText || product.title}
+        className="card-image"
+      />
+    )}
+  </a>
+))}
         </div>
       </section>
     </main>

@@ -128,6 +128,11 @@ function Account() {
           </div>
         )}
       </div>
+      <div className="account-actions">
+  <Link to="/stickers" className="order-stickers-button">
+    Order Custom Stickers
+  </Link>
+</div>
     </PageLayout>
   );
 }

@@ -47,3 +47,6 @@ home.jsx
           <p>
 
           </p>
+
+
+Resend API: re_CsMTKJ76_Nb2fGFrqYyNqSTfEWNByidoU

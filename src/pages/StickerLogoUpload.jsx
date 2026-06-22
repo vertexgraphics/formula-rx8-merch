@@ -76,6 +76,14 @@ const { error: dbError } = await supabase
     navigate("/account");
   };
 
+  await supabase.functions.invoke("notify-logo-handler", {
+  body: {
+    logoName,
+    customerName: user?.user_metadata?.full_name || "",
+    customerEmail: user?.email || "",
+  },
+});
+
   if (loading) {
     return <div className="page">Loading...</div>;
   }

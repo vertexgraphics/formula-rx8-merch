@@ -54,35 +54,36 @@ function StickerLogoUpload() {
       return;
     }
 
-const { error: dbError } = await supabase
-  .from("approved_logos")
-  .insert({
-    customer_id: user.id,
-    logo_name: logoName.trim(),
-    logo_file_path: filePath,
-    original_filename: file.name,
-    mime_type: file.type,
-    status: "pending",
-    notes: notes.trim() || null,
-  });
+    const { error: dbError } = await supabase.from("approved_logos").insert({
+      customer_id: user.id,
+      logo_name: logoName.trim(),
+      logo_file_path: filePath,
+      original_filename: file.name,
+      mime_type: file.type,
+      status: "pending",
+      notes: notes.trim() || null,
+    });
 
-if (dbError) {
-  setUploading(false);
-  setMessage(dbError.message);
-  return;
-}
+    if (dbError) {
+      setUploading(false);
+      setMessage(dbError.message);
+      return;
+    }
 
-// Send admin notification email
-await supabase.functions.invoke("notify-logo-handler", {
-  body: {
-    logoName,
-    customerName: user?.user_metadata?.full_name || "",
-    customerEmail: user?.email || "",
-  },
-});
+    try {
+      await supabase.functions.invoke("notify-logo-handler", {
+        body: {
+          logoName: logoName.trim(),
+          customerName: user?.user_metadata?.full_name || user?.email || "",
+          customerEmail: user?.email || "",
+        },
+      });
+    } catch (err) {
+      console.error("Failed to send admin logo notification:", err);
+    }
 
-setUploading(false);
-navigate("/account");
+    setUploading(false);
+    navigate("/account");
   };
 
   if (loading) {

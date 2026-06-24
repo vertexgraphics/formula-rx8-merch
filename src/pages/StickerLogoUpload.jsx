@@ -66,23 +66,24 @@ const { error: dbError } = await supabase
     notes: notes.trim() || null,
   });
 
-    if (dbError) {
-      setUploading(false);
-      setMessage(dbError.message);
-      return;
-    }
+if (dbError) {
+  setUploading(false);
+  setMessage(dbError.message);
+  return;
+}
 
-    setUploading(false);
-    navigate("/account");
-  };
-
-  await supabase.functions.invoke("notify-logo-handler", {
+// Send admin notification email
+await supabase.functions.invoke("notify-logo-handler", {
   body: {
     logoName,
     customerName: user?.user_metadata?.full_name || "",
     customerEmail: user?.email || "",
   },
 });
+
+setUploading(false);
+navigate("/account");
+  };
 
   if (loading) {
     return <div className="page">Loading...</div>;

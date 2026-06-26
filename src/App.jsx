@@ -13,6 +13,7 @@ import Account from "./pages/Account";
 import StickerLogoUpload from "./pages/StickerLogoUpload";
 import AdminLogoApprovals from "./pages/AdminLogoApprovals";
 import Stickers from "./pages/Stickers";
+import Contact from "./pages/Contact";
 
 import Navbar from "./components/Navbar";
 import { AuthProvider } from "./context/AuthContext";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/stickers" element={<Stickers />} />
           <Route path="/stickers/upload-logo" element={<StickerLogoUpload />} />
           <Route path="/admin/logo-approvals" element={<AdminLogoApprovals />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

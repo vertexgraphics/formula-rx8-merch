@@ -21,6 +21,7 @@ function Navbar() {
         <Link to="/beanies">Beanies</Link>
         <Link to="/stubbycoolers">Stubby Coolers</Link>
       <Link to="/stickers">Stickers</Link>
+      <Link to="/contact">Contact Us</Link>
 
         {user ? (
           <>

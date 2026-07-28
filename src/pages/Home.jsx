@@ -46,11 +46,10 @@ function Home() {
       </section>
 
       <Navbar />
-        <h3>Orders to be delivered at the Formula RX8 Nationals (Sydney Motorsport Park, 17-18 July, 2026)</h3>
+              <h1>Official Formula RX8 Merchandise</h1>
+        <h2>Orders to be delivered at the Formula RX8 Nationals (Sydney Motorsport Park, 17-18 July, 2026)</h2>
       <section className="categories">
         <p className="eyebrow">Shop By Category</p>
-
-        <h2>Official Formula RX8 Merchandise</h2>
 
 <div className="grid">
   {categories.map((item) => (

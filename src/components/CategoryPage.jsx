@@ -14,7 +14,7 @@ function CategoryPage({ title, description, products }) {
       </section>
 
       <Navbar />
-        <h3>Orders to be delivered at the Formula RX8 Nationals (Sydney Motorsport Park, 17-18 July, 2026)</h3>
+        <h3>Orders to be delivered at the Formula RX8 Round (Queensland Raceway, 14-16 August, 2026)</h3>
       <section className="categories">
         <h1>{title}</h1>
         <p className="eyebrow">Shop {title}</p>

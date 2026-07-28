@@ -119,6 +119,12 @@ body {
 .categories h2 {
   color: white;
   margin: 10px 0 30px;
+  font-size: 30px;
+}
+
+.categories h1 {
+  color: white;
+  margin: 10px 0 30px;
   font-size: 40px;
 }
 
@@ -942,7 +948,7 @@ body {
   }
 
   .categories h2 {
-    font-size: 42px;
+    font-size: 30px;
     line-height: 1.15;
   }
 

@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function CategoryPage({ title, description, products }) {
    useEffect(() => {
-  document.title = `${title} | Formula RX8 Official Merchandise`;
+  document.title = `Formula RX8 ${title} | Official Merchandise`;
 }, [title]);
 
   return (

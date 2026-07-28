@@ -4,7 +4,8 @@ import Navbar from "../components/Navbar";
 
 function Home() {
    useEffect(() => {
-    document.title = "Formula RX8 Merchandise";
+    document.title =
+  "Official Formula RX8 Merchandise | Vertex Graphics";
   }, []);
   const categories = [
     {

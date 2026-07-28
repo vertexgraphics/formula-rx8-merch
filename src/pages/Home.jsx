@@ -45,10 +45,18 @@ function Home() {
 
       </section>
 
-      <Navbar />
-              <h1>Official Formula RX8 Merchandise</h1>
-        <h2>Orders to be delivered at the Formula RX8 Nationals (Sydney Motorsport Park, 17-18 July, 2026)</h2>
-      <section className="categories">
+<Navbar />
+
+<section className="home-intro">
+  <h1>Official Formula RX8 Merchandise</h1>
+
+  <p className="delivery-notice">
+    Orders to be delivered at the Formula RX8 Nationals
+    (Sydney Motorsport Park, 17–18 July 2026)
+  </p>
+</section>
+
+<section className="categories">
         <p className="eyebrow">Shop By Category</p>
 
 <div className="grid">

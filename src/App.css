@@ -116,16 +116,31 @@ body {
   font-size: 13px;
 }
 
+.home-intro {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.home-intro h1 {
+  color: white;
+  margin: 10px 0 16px;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+.delivery-notice {
+  margin: 0 auto;
+  max-width: 900px;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .categories h2 {
   color: white;
   margin: 10px 0 30px;
   font-size: 30px;
-}
-
-.categories h1 {
-  color: white;
-  margin: 10px 0 30px;
-  font-size: 40px;
 }
 
 /* GRID */
@@ -907,6 +922,14 @@ body {
   .page {
     padding: 16px;
   }
+
+.home-intro h1 {
+  font-size: 30px;
+}
+
+.delivery-notice {
+  font-size: 17px;
+}
 
   .hero {
     width: 100%;

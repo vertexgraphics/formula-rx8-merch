@@ -20,7 +20,7 @@ function Stickers() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    document.title = "Stickers | Formula RX8 Merch";
+    document.title = "Formula RX8 Stickers | Official Merchandise";
   }, []);
 
   useEffect(() => {

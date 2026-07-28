@@ -11,7 +11,7 @@ export default function StubbyCoolers() {
 
   return (
     <CategoryPage
-      title="Coolers"
+      title="Stubby Coolers"
       description="Trackside essentials for every Formula RX8 supporter."
       products={products}    
       />

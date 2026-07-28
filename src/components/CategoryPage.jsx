@@ -16,8 +16,9 @@ function CategoryPage({ title, description, products }) {
       <Navbar />
         <h3>Orders to be delivered at the Formula RX8 Nationals (Sydney Motorsport Park, 17-18 July, 2026)</h3>
       <section className="categories">
+        <h1>{title}</h1>
         <p className="eyebrow">Shop {title}</p>
-        <h2>{title}</h2>
+        
 
         <div className="grid">
 {products.map((product) => (

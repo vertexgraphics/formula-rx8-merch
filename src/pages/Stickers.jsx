@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContext";
 import { supabase } from "../lib/supabase";
 import PageLayout from "../components/PageLayout";
 import {
-  getProductsByCollectionHandle,
+  getRX8ProductsByType,
   createShopifyCart,
 } from "../shopify";
 
@@ -60,7 +60,7 @@ function Stickers() {
   useEffect(() => {
     const fetchStickerProducts = async () => {
       try {
-        const products = await getProductsByCollectionHandle("stickers");
+        const products = await getRX8ProductsByType("Sticker");
         console.log("Sticker products:", products);
         setShopifyStickerProducts(products);
       } catch (error) {

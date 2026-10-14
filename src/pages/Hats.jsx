@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import CategoryPage from "../components/CategoryPage";
-import { getProductsByCollection } from "../shopify";
+import { getRX8ProductsByType } from "../shopify";
 
 export default function Hats() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    getProductsByCollection("hats").then(setProducts).catch(console.error);
+    getRX8ProductsByType("Hat").then(setProducts).catch(console.error);
   }, []);
 
   return (
